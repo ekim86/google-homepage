@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<style>
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body {
+  font-size: 14px;
+  font-family: Roboto, arial, sans-serif;
+  color: #222;
+
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  font-size: 13px;
+
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  opacity: .55;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  color: #000;
+  opacity: .55;
+}
+
+.material-icons:hover {
+  color: black;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-bar {
+  height: center;
+  border: 1px solid purple;
+
+}
+
+.nav-left {
+  margin-left: 15px;
+  display: inline-flex;
+  padding: 5px;
+  margin: 0 5px;
+  color: red;
+  border: 1px solid orange;
+}
+
+.about {
+  padding-left: 15px;
+}
+
+.store {
+  padding-left: 15px;
+}
+
+.nav-right {
+  float: right;
+    padding-left: 32px;
+    display: flex;
+    
+
+}
+
+.nav-bar-gmail {
+  border: 1px solid red;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+  padding-right: 15px;
+}
+
+.gmail {
+
+}
+
+.images {
+  padding-left: 15px;
+}
+
+.nav-bar-customized {
+
+  display: inline-flex;
+  border: 1px solid green;
+  padding: 1px 4px;
+}
+
+.google-logo {
+  padding-top: 109px;
+
+}
+
+
+
+.btn-sign-in {
+  border: 1px solid #4285f4;
+  background: #4285f4;
+  font-weight: bold;
+  outline: none;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 2px;
+  display: inline-block;
+    line-height: 28px;
+
+}
+
+.sign-in {
+  padding: 0 0 0 15px;
+}
+
+.apps {
+  display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+}
+
+.search-bar {
+  background: #fff;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width: 482px;
+}
+
+.accessibility-mic {
+  background: url(//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    vertical-align: middle;
+}
+
+.search-bar {
+  flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6px;
+    width: 484px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+#search-icon {
+  display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+
+#search-engine {
+  display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    color: transparent;
+    flex: 100%;
+    white-space: pre;
+    font: 16px arial,sans-serif;
+    line-height: 34px;
+    height: 34px !important;
+}
+
+.main {
+  margin-top: 89px
+}
+
+#input {
+  background-color: red;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    font: 16px arial,sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#voice {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+
+input[type="submit"]{
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+  border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f8f8;
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    color: #222;
+}
+</style>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+
+  <ul>
+
+
+  </ul>
+
+  <div class="nav-bar">
+
+    <div class="nav-left">
+      <div class="about">
+        <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+      </div>
+      
+      <div class="store">
+        <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+      </div>
+    </div>
+
+    <div class="nav-right">
+
+      <div class="nav-bar-gmail">
+        <div class="gmail">
+
+          <a href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a>
+        </div>
+        <div class="images">
+
+          <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a>
+        </div>
+      </div>
+
+      <!-- <div class="sign-in-div"> -->
+        <div class="nav-bar-customized">
+          <div class="apps">
+            <span class="material-icons">apps</span>
+          </div>
+          <div class="sign-in">
+            <button class="btn-sign-in" style="vertical-align: super">Sign in</button>
+          </div>
+        </div>
+      <!-- </div> -->
+
+    </div>
+
+  </div>
+</head>
+
+<body>
+
+  <center>
+
+  
+  <div class="main">
+    <div class="google-logo">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" />
+    </div>
+
+    
+
+    <div class="search-bar">
+      <div id="search-icon">
+        <span class="material-icons">
+          search
+        </span>
+      </div>
+      <div id="search-engine">
+        <input type="text" id="input" value="search">
+      </div>
+      <div id="voice">
+        <span class="accessibility-mic"></span>
+      </div>
+      
+    
+</div>
+<div>
+    <br>
+    <div>
+      <input type="submit" value="Google Search" class="google-search">
+    </div>
+    <div>
+      <input type="submit" value="I'm Feeling Lucky" class="im-feeling-lucky">
+    </div>
+</div>
+
+</div>
+</center>
+
+
+</body>
+
+</html>
